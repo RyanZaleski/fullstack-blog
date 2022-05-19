@@ -1,0 +1,144 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  
+}
+
+body{
+  font-family: 'Nunito Sans', sans-serif;
+}
+/******************************************
+/* MOBILE LAYOUT
+/*******************************************/
+
+@media screen and (max-width: 767px){
+
+
+
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 35px;
+  padding: 20px;
+  height: 19vh;
+  background: rgb(3, 0, 150, 1);
+  background: linear-gradient(-15deg, rgba(20, 15, 241, 0.68) 8%, rgba(3, 0, 150, 1) 92%);
+  color: white;
+  
+}
+
+header::before {
+  content: '';
+  
+  width: 65%;
+  height: 19vh;
+  border-radius: 0 100% 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(255, 255, 255, 0.08);
+  background: linear-gradient(rgba(36, 89, 224, 0.41) 8%, rgba(255, 255, 255, 0.08) 92%);
+  
+}
+
+header::after {
+  content: '';
+  
+  width: 100%;
+  height: 19vh;
+  top: 0;
+  position: absolute;
+  border-radius: 250px 0 0 0;
+  right: 0;
+  background: rgb(255, 255, 255, 0.08);
+  background: linear-gradient(rgba(0, 24, 149, 0.69) 8%, rgba(8, 39, 203, 0.11) 92%);
+}
+
+header h2{
+  font-size: 1.25em;
+  font-weight: 600;
+  
+  z-index: 2;
+}
+
+header h1{
+  font-size: 1.4em;
+  
+  font-weight: 700;
+  padding: 0 40px;
+  z-index: 2;
+}
+
+header input {
+  background: rgba(255, 255, 255, 0.16);
+  border: none;
+  border-radius: 100px;
+  height: 40px;
+  z-index: 2;
+  font-weight: 400;
+  
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: 400;
+}
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: 400;
+}
+
+::-ms-placeholder {
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: 400;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: 400;
+}
+
+header button {
+  background: #FAFF00;
+  border: none;
+  border-radius: 100px;
+  z-index: 2;
+  padding: 0 22px;
+}
+
+header button a {
+  font-weight: 700;
+}
+
+header div {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+  
+}
+
+input::placeholder {
+  padding-left: 10px;
+  font-weight: 800;
+  
+}
+
+
+
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
